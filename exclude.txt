@@ -25,9 +25,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# local env files
-.env*.local
-
 # vercel
 .vercel
 
@@ -39,12 +36,6 @@ certificates
 # sentry
 .sentryclirc
 
-# environment
-.env*.local
-
-.env
-.env.prod
-
 .git/*
 
 /public/
@@ -53,7 +44,314 @@ certificates
 package.json
 package-lock.json
 
-package.json
-package-lock.json
-
 tsconfig.json
+
+.dockerignore
+.cursorrules
+
+# VS code
+
+# Key files
+
+
+
+### Data
+
+/data
+
+# Database stuff
+
+# images or media files
+
+# Development Dependencies and Package Management
+/node_modules/
+/.pnp/
+.pnp.js
+.yarn/
+/venv/
+/.venv/
+/.env/
+/env/
+/__pypackages__/
+/.pdm.toml
+/.ruff_cache/
+/.pytest_cache/
+/poetry.lock
+/.poetry/
+/pip-wheel-metadata/
+/.uv/
+/pdm.lock
+/.conda/
+/conda-env/
+/.pipenv/
+Pipfile.lock
+
+# Python Artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+/build/
+/develop-eggs/
+/dist/
+/downloads/
+/eggs/
+/.eggs/
+/lib/
+/lib64/
+/parts/
+/sdist/
+/var/
+/wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Testing and Coverage
+/.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+htmlcov/
+/coverage/
+
+# ML/AI Specific
+/checkpoints/
+/runs/
+/wandb/
+/mlruns/
+/logs/
+/tensorboard/
+/ray_results/
+*.ckpt
+*.pth
+*.h5
+*.hdf5
+*.pkl
+*.joblib
+*.model
+*.weights
+*.pt
+*.onnx
+*.tflite
+/data/
+/datasets/
+/raw_data/
+/processed_data/
+/interim_data/
+/features/
+/.vector_cache/
+model_artifacts/
+/experiments/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+*.nbconvert.ipynb
+.jupyter/
+jupyter_notebook_config.py
+
+# IDE and Editor Files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+*.sublime-workspace
+*.sublime-project
+.atom/
+.vs/
+*.code-workspace
+.history/
+
+# Environment and Secrets
+!.env.template
+!.env.example
+.env
+.env.*
+*.env
+.env.local
+.env.*.local
+.env.development
+.env.test
+.env.production
+.env.local
+.env.dev
+.env.prod
+*.pem
+.aws/
+.ssh/
+credentials/
+secrets/
+*.key
+*.crt
+*.cert
+*.p12
+
+# Build and Deployment
+/.next/
+/out/
+/.vercel/
+/.netlify/
+/build/
+/dist/
+/.serverless/
+/cdk.out/
+/.terraform/
+*.tfstate
+*.tfstate.*
+.terraformrc
+terraform.rc
+
+# Version Control
+.git/
+.gitignore
+.gitattributes
+.svn/
+.hg/
+.bzr/
+
+# Documentation Build
+/docs/_build/
+/site/
+/.docusaurus/
+/_site/
+/public/
+
+# Container and Orchestration
+.docker/
+*.dockerfile
+Dockerfile*
+docker-compose*.yml
+.dockerignore
+/k8s/
+/helm/
+/charts/
+
+# Dependency Lock Files
+package-lock.json
+yarn.lock
+poetry.lock
+Pipfile.lock
+pdm.lock
+requirements.txt.lock
+
+# Config Files
+*.config.js
+*.config.ts
+tsconfig.json
+tox.ini
+setup.cfg
+pyproject.toml
+.babelrc
+.prettierrc
+.eslintrc
+.stylelintrc
+.editorconfig
+
+# Temporary and System Files
+*.log
+*.tmp
+*.temp
+.DS_Store
+Thumbs.db
+.directory
+*.swp
+*.bak
+*.backup
+*~
+
+# Large Media and Binary Files
+*.pdf
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.iso
+*.bin
+*.exe
+*.dll
+*.dylib
+*.so
+*.jar
+*.war
+*.mp4
+*.avi
+*.mov
+*.wmv
+*.flv
+*.mp3
+*.wav
+*.ogg
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.bmp
+*.ico
+*.svg
+*.ttf
+*.woff
+*.woff2
+*.eot
+
+# Tool-specific
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+.coverage
+.benchmarks/
+prof/
+.snyk
+.dccache
+.cursor/
+.cursorrules
+.pre-commit-config.yaml
+
+# CI/CD
+.github/workflows/
+.gitlab-ci.yml
+.travis.yml
+.circleci/
+azure-pipelines.yml
+.jenkins/
+buildspec.yml
+.drone.yml
+
+# Monitoring and Logging
+*.log
+logs/
+log/
+/monitoring/
+/traces/
+.sentry-native/
+.sentryclirc
+
+# Package Specific (Common AI/ML Tools)
+.torch/
+.tensorflow/
+.keras/
+.fastai/
+.transformers/
+.huggingface/
+.ray/
+.optuna/
+.sacred/
+.dvc/
+.bentoml/
+.weights/
+.models/

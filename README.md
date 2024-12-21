@@ -25,17 +25,18 @@ This tool is designed to dump the contents of a Git repository into a single fil
 ## Usage
 
 ```
-python dump.py <start_path> <output_file> [exclusion_file] [file_extensions...]
+python dump.py <start_path> <output_file> [-e exclusion_file] [file_extensions...]
 ```
 
 - `<start_path>`: The root directory of your repository
 - `<output_file>`: The file where the dumped content will be saved
-- `[exclusion_file]`: Optional. A file containing exclusion patterns (e.g., .gitignore)
+- `[exclusion_file]`: Optional. A file containing exclusion patterns and exceptions to these marked by ! (see examples in `exclude.txt`. e.g., .gitignore)
 - `[file_extensions...]`: Optional. Specific file extensions to include (e.g., .py .js .tsx)
 
 Example:
 ```
 python dump.py /path/to/your/repo output.txt .gitignore py js tsx
+python dump.py /path/to/your/repo output.txt -e exclude.txt
 ```
 
 ## Output Format
