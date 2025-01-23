@@ -355,3 +355,6 @@ log/
 .bentoml/
 .weights/
 .models/
+
+
+./LICENSE
