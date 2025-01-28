@@ -108,6 +108,7 @@ __pycache__/
 .installed.cfg
 *.egg
 MANIFEST
+.python-version
 
 # Testing and Coverage
 /.tox/
@@ -321,6 +322,7 @@ prof/
 .cursor/
 .cursorrules
 .pre-commit-config.yaml
+ruff.toml
 
 # CI/CD
 .github/workflows/
